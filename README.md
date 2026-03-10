@@ -26,5 +26,11 @@ Skrip ini menyediakan menu interaktif untuk menginstal berbagai kebutuhan tool s
 2. **Berikan Izin Eksekusi**
    Buka terminal WSL dan jalankan perintah:
    ```bash
-   chmod +x wip.sh
-   sudo bash wip.sh
+
+sudo apt update && sudo apt install dos2unix -y
+
+# Konversi file script-nya
+dos2unix wip.sh
+
+# Jalankan kembali
+sudo bash wip.sh
